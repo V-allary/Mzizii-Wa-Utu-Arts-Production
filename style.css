@@ -71,16 +71,36 @@ a:hover { text-decoration: underline; }
 }
 
 .hero-1 {
-  background-position: 50% 20%;
-  background-size: 105%;
+  background-position: 50% 35%;    
+  background-size: 105%;           
 }
 
-.hero-2{
-  background-position: center center;
+.hero-2 { background-position: 50% 50%; }
+.hero-3 { background-position: 50% 50%; }
+ 
+@media (max-width: 767px) {
+  .hero-1 {
+    background-position: 50% 45% !important; 
+    background-size: 110% !important;         
+  }
+
+  
+  .hero-content {
+    top: 60% !important;       
+    transform: translate(-50%, -40%) !important; 
+    padding-right: 1rem;
+  }
+
+  
+  .hero-carousel .carousel-indicators {
+    bottom: 18px; 
+  }
 }
 
-.hero-3 {
-  background-position: bottom centre;
+ 
+@media (max-width: 568px) {
+  .hero-carousel { height: 100svh; } 
+  .hero-bg { background-repeat: no-repeat; } 
 }
  
 .carousel-fade .carousel-item {
