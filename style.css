@@ -71,8 +71,7 @@ a:hover { text-decoration: underline; }
 }
 
 .hero-1 {
-  background-position: 50% 25%;
-  background-size: 110%;
+  background-position: top center ;
 }
 
 .hero-2{
