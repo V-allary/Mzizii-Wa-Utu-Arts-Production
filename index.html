@@ -1,383 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MZIZII ARTS PRODUCTION</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vallary Mitchelle | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
+  <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- AOS Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const heroCarousel = document.querySelector('#heroCarousel');
-    
-        if (heroCarousel) {
-          new bootstrap.Carousel(heroCarousel, {
-            interval: 3000, 
-            pause: false,     
-            ride: 'carousel', 
-            wrap: true       
-          });
-        }
-      });
-    </script>
 </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg  navbar-transparent  fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between px-3 position-relative">
-        <a class="navbar-brand fw-bold" href="#home">
-            <img src="mwuap.png" height="55"  width="55" class="img-fluid" class="me-2"> 
-            <span class="navbar-center-text">
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#nav"
-        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#home" class="nav-link text-dark">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link text-dark">About Us</a></li>
-                <li class="nav-item"><a href="#motives" class="nav-link text-dark">Our Motives</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link text-dark">Services</a></li>
-                <li class="nav-item"><a href="#team" class="nav-link text-dark">The Team</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link text-dark">Contact</a></li>
-                <li class="nav-item"><a href="#sendmessage" class="nav-link text-dark">Send Message</a></li>
-            </ul>
-        </div>
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container" data-aos="fade-up">
+  
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="#home">
+        <img src="Brand logo.png" width="48"  class="me-2">
+        VMDIGITAL
+      </a>
+  
+      <!-- Toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-work">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">My Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+  
     </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section id="home" class="hero-carousel">
-
-  <div id="heroCarousel" class="carousel slide carousel-fade">
-
-    <!-- Slide indicators -->
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
-          class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-</div>
-
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <div class="hero-bg hero-1"
-             style="background-image: url('mwapp.png');"></div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="hero-bg hero-2"
-             style="background-image: url('this-is-the-kenya-national.jpg');"></div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="hero-bg hero-3"
-             style="background-image: url('img-3.webp');"></div>
-      </div>
-
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white" style="background: url('New\ VM.jpg') center center/cover no-repeat; height: 75vh;">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-5 fw-bold"></h1>
+      <p class="lead mb-4">Web Developer & Design</p>
+      <a href="#contact" class="btn btn-light btn-lg px-4">Work With Me</a>
     </div>
+  </section>
 
-    <button class="carousel-control-prev" type="button"
-            data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button"
-            data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
-    <!-- Hero text overlay -->
-    <div class="hero-content text-center">
-      <p class="lead fw-bold" data-aos="fade-up" data-aos-delay="200">
-        Home is Where Art is.
-      </p>
-
-      <div class="hero-buttons mt-4" data-aos="fade-up" data-aos-delay="300">
-        <a href="#services" class="btn-solid mx-2">Explore</a>
-        <a href="#about" class="btn-solid mx-2">About Us</a>
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <div class="d-flex flex-md-row flex-column align-items-center">
+      <!-- Image Section -->
+      <div class="about-img-wrapper me-md-4 mb-4 mb-md-0">
+      </div>
+  
+      <!-- Text Section -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m a passionate Web Developer, I design high-converting websites that grow businesses. I bring brands to life online.</p>
+        <p>My journey began with a deep curiosity about how the internet works—from design to code to content. Over time, I fell in love with the magic of building websites that not only look good but also deliver real results. Whether I'm crafting a brand-new site or revamping one, I always focus on clean code, modern design, that speak to your audience.</p>
+        <p>When I’m not debugging code or brainstorming content ideas, you’ll find me styling beauty clients, exploring trends, or leveling up my skills in tech and entrepreneurship. I believe in combining creativity and logic—and I bring that energy into every project I take on.</p>
+        <p>If you're looking for someone who can design, build, and grow your digital brand with care, strategy, and style — let’s connect. I’d love to bring your vision to life.</p>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
- 
-<!-- ABOUT -->
-<section id="about" class="py-5">
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
     <div class="container">
-      <div class="row align-items-center">
-  
-        <!-- TEXT -->
-        <div class="col-md-6" data-aos="fade-right">
-          <h2 class="mb-3">About Us</h2>
-          <p>
-            Mzizii Arts Production is a creative theatre company dedicated to telling powerful stories that inspire, educate, and entertain. Rooted in culture and driven by passion for the performing arts, we bring original and adapted stage productions to life through compelling storytelling, expressive performances, and thoughtful direction. Our work extends beyond the stage as we nurture emerging talent, engage communities, and collaborate with institutions to make theatre accessible, meaningful, and impactful. At Mzizii Arts Production, we believe theatre is more than performance — it is a voice, a mirror, and a force for connection.
-
-
-          </p>
+      <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Services Offered</h2>
+      <div class="row g-4">
+        
+        <!-- Website Design & Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-display"></i></div>
+              <h5 class="card-title fw-bold">Website Design & Development</h5>
+              <p class="card-text">I craft clean, modern, and fully responsive websites that look stunning on all devices. Whether you need a portfolio, business site, or online store, I build websites that reflect your brand and keep visitors engaged.</p>
+            </div>
+          </div>
         </div>
   
-        <!-- IMAGE -->
-        <div class="col-md-6 text-center" data-aos="fade-left">
-          <img src="f87d2c03-6261-4a0a-8ba0-84dd7f3bcd6f.JPG" class="img-fluid rounded" alt="About Mzizii Arts">
+        <!-- Backend Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-hdd-network"></i></div>
+              <h5 class="card-title fw-bold">Backend Development</h5>
+              <p class="card-text">I build scalable, secure, and efficient backend systems using technologies like Node.js and MongoDB. From databases to server-side logic, I ensure your website runs smoothly for every user.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- E-Commerce Solutions -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-bag-check"></i></div>
+              <h5 class="card-title fw-bold">E-Commerce Solutions</h5>
+              <p class="card-text">Ready to sell online? I build secure and easy-to-manage online stores with integrated payments like M-Pesa and card options—optimized for conversions and customer experience.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- SEO -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-graph-up-arrow"></i></div>
+              <h5 class="card-title fw-bold">Search Engine Optimization (SEO)</h5>
+              <p class="card-text">I apply SEO best practices to improve your site's visibility on search engines. From keyword optimization to lightning-fast performance, I help bring more eyes to your business.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Maintenance -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-tools"></i></div>
+              <h5 class="card-title fw-bold">Website Maintenance & Updates</h5>
+              <p class="card-text">I offer ongoing support and maintenance to keep your site secure, fast, and up-to-date. Focus on your business while I handle everything behind the scenes.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mobile-First Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 text-primary fs-1"><i class="bi bi-phone"></i></div>
+              <h5 class="card-title fw-bold">Mobile-First Development</h5>
+              <p class="card-text">I design websites with a mobile-first approach so they look and perform great on smartphones and tablets. Your users get a seamless experience—anytime, anywhere.</p>
+            </div>
+          </div>
         </div>
   
       </div>
     </div>
   </section>
 
-
-<!--MOTIVE-->
- 
-<section id="motives" class="py-5">
+  <!--My Work Section-->
+  <section id="my-work" class="py-5 bg-light">
     <div class="container">
-      <div class="row align-items-center">
-  
-        <div class="col-md-6 order-md-1 order-2 text-center" data-aos="fade-right">
-          <img src="img-3.webp" class="img-fluid rounded" alt="Our Motives">
-        </div>
-  
-        <div class="col-md-6 order-md-2 order-1" data-aos="fade-left">
-          <h2 class="mb-3">Our Motives</h2>
-          <p>
-            Our key motives are to:
-    •   Tell meaningful stories that reflect real experiences, culture, and social realities.
-    •   Promote artistic excellence by producing high-quality, impactful stage performances.
-    •   Nurture emerging talent through training, mentorship, and creative development.
-    •   Engage and empower communities by making theatre accessible and relevant.
-    •   Inspire dialogue and change through performances that educate, challenge, and entertain.
-
-Through every production, workshop, and collaboration, we remain committed to using theatre as a voice for creativity, identity, and positive transformation.
-
-
-          </p>
-        </div>
-  
-      </div>
+        <h2 class="text-center mb-5" data-aos="fade-up">My Work</h2>
+        <div class="work-text text-center"  data-aos="fade-up" data-aos-delay="150"></div>
+       <p> This collection highlights a range of digital projects delivered, combining thoughtful design, strong functionality, and solutions tailored to real business needs.
+       </p> 
     </div>
-  </section>
-
-<!--JOIN US-->
-<section id="Join us" class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6" data-aos="fade-right">
-    <h2 class="mb-3" >Becoming a Mzizii </h2>
-    <p>
-        Becoming a Mzizi means joining a creative family rooted in storytelling, growth, and impact. Whether you are an actor, writer, director, creative, or supporter of the arts, Mzizii Arts Production offers a space to learn, collaborate, and express your voice through theatre.
-
-Join us and be part of a community that believes in creativity, culture, and meaningful storytelling.
-    </p>
-    <a href="#contact" class="btn-solid mx-2">Join Us</a>
-  </div>
-
-  <div class="col-md-6 text-center" data-aos="fade-left">
-    <img src="Mzizii Wa Utu 1.jpeg" class="img-fluid rounded" alt="Join Us">
-  </div>
-        </div>
-    </div>
-</section>
-
- <!-- SERVICES -->
-<section id="services" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-5 text-center text-dark fw-bold" data-aos="fade-up">WhAT WE DO</h2>
-        <div class="underline"></div>
-
-        <div class="row g-4">
-
-            <!-- 1 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="fas fa-theater-masks service-icon"></i>
-                    <h5 class="mt-3">Stage Productions</h5>
-                    <p>We bring stories to life through original and adapted plays, musicals and theatrical performances.</p>
-                </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="bi bi-calendar-event-fill service-icon"></i>
-                    <h5 class="mt-3">Event Productions</h5>
-                    <p>Unforgettable theatrical performances tailored for private celebrations and corporate functions.</p>
-                </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="bi bi-person-video3 service-icon"></i>
-                    <h5 class="mt-3">Talent Development</h5>
-                    <p>Training young talent by enhancing acting techniques and public speaking skills.</p>
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="bi bi-people-fill service-icon"></i>
-                    <h5 class="mt-3">Community Engagement</h5>
-                    <p>Performances that inspire, educate, and motivate schools and communities.</p>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="bi bi-pencil-fill service-icon"></i>
-                    <h5 class="mt-3">Scriptwriting & Directing</h5>
-                    <p>Creative storytelling through expert writing and direction.</p>
-                </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-card p-4 text-center shadow-sm">
-                    <i class="bi bi-lightbulb-fill service-icon"></i>
-                    <h5 class="mt-3">Theatre Consultancy</h5>
-                    <p>Guidance on stage setup, lighting, and full production planning.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!--GALLERY -->
-<section id="team" class="container py-5">
-    <h2 class="text-center mb-4  fw-bold" data-aos="fade-up">THE TEAM</h2>
-    <div class="underline"></div>
-
-    <div class="row g-4">
-
-        <div class="col-md-4" data-aos="zoom-in">
-            <img src="974303f8-d82f-4bf1-996e-0c61f5b5db22.JPG" class="img-fluid rounded shadow">
-            <h6 class="text-center mt-2">Investor</h6>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-            <img src="024db51d-03d0-4082-89fd-fa34ecdec2a6.JPG" class="img-fluid rounded shadow">
-            <h6 class="text-center mt-2">Director</h6>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <img src="16fc6345-5324-4b30-85d5-141ff6642ea6.JPG" class="img-fluid rounded shadow">
-            <h6 class="text-center mt-2">Casting Director</h6>
-        </div>
-
-    </div>
-</section>
-
-<!--Contact us-->
-<section id="contact" class="py-5 bg-light">
-     <h2 class="text-center mb-4 text-dark fw-bold" data-aos="fade-up">CONTACT US</h2>
-    <div class="underline"></div>
-  
-    <div class="contact-cards" >
-  
-
-    <!-- Phone -->
-    <div class="contact-card" data-aos="fade-right">
-    <div class="icon">
-      <i class="fas fa-phone"></i>
-     </div>
-     <h3>Phone</h3>
-    <p>+254 712345678 – Mzizii Arts Production</p>
-    <p>+254 712345678 – Mzizii Arts Production</p>
-        </div>
-
-      <!-- Location -->
-      <div class="contact-card" data-aos="fade-up">
-        <div class="icon">
-          <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <h3>Location</h3>
-        <p>Kenya National Theatre, Nairobi</p>
-      </div>
-
-  
-      <!-- Email -->
-      <div class="contact-card" data-aos="fade-left">
-        <div class="icon">
-          <i class="fas fa-envelope"></i>
-        </div>
-        <h3>Email</h3>
-        <p>mwuap@gmail.com</p>
-        <p>mwuap.com</p>
-      </div>
-  
-    </div>
-  </section>
-<!-- send message -->
-<section id="sendmessage" class=" py-5 bg-light text-dark">
-    <div class="container">
-        <h2 class="text-center mb-4 text-dark fw-bold" data-aos="fade-up">Send Message</h2>
-        <div class="underline"></div>
-
         <div class="row">
-            <div class="col-md-6 " data-aos="fade-right">
-                <form>
-                    <input type="text" class="form-control mb-3" placeholder="Your Name">
-                    <input type="email" class="form-control mb-3" placeholder="Your Email">
-                    <input type="subject" class="form-control mb-3" placeholder="Subject">
-                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
-                    <button class="btn-solid mx-2">Send Message</button>
-                </form>
+            <!--Project Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow">
+                    <img src="trendysnapp.jpeg"   class="img-fluid" class="card-img-top" alt="Trendy Nails Spot Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Nails Spot Website</h5>
+                        <p class="card-text">
+                        A modern, responsive booking website  built to help clients easily explore services, choose locations, and book nail appointments online. It features a clean design, automated bookings, and a smooth user experience across all devices.
+                        <a href="https://trendynailsspot.co.ke" target="_blank" class="btn btn-primary">Visit Site</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-6" data-aos="fade-left">
-                <p>Kenya National Theatre, Nairobi, Kenya</p>
-                <iframe
-                src="https://www.google.com/maps?q=Kenya+National+Theatre+Nairobi&output=embed"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-                </iframe>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-shadow">
+                <img src="mwuapsnap.jpeg" class="img-fluid" class="card-img-top" alt="Mzizi Arts Production">
+                <div class="card-body">
+                  <h5 class="card-title">Mzizi Arts Production</h5>
+                  <p class="card-text">
+                  Thearter Art Production Company that is visually engaging platform  created to showcase creative work, highlight services, and present the brand professionally online. It focuses on strong visuals, smooth animations, and clear content to attract and convert clients.
+                  </p>
+                  <a href="https://v-allary.github.io/Mzizii-Arts-Production/" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+              </div>
             </div>
-        </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow">
+                    <img src="Screenshot .jpeg"   class="img-fluid" class="card-img-top" alt="Golden Hands Demo Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Hands Spa Demo Website</h5>
+                        <p class="card-text">
+                            A  a premium, elegant platform I designed to showcase spa services, support online bookings, and deliver a calm, luxurious user experience across all devices.
+                        </p>
+                        <a href="https://v-allary.github.io/Golden-Hands-Spa-Demo/" target="_blank" class="btn btn-primary">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 shadow">
+                <img src="Tanchi Screenshot .1.jpeg" class="img-fluid" class="card-img-top" alt="Tanchi Nails Demo">
+                <div class="card-body">
+                  <h5 class="card-tittle">Tanchi Nails Demo Website</h5>
+                  <p class="card-text">
+                    A Full project for Tanchi Nails Demo Website with a Booking section,work presentaion and accurate location.
+                  </p>
+                  <a href="https://v-allary.github.io/TANCHINAILS/" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 shadow">
+                <img src="Screenshot  2.jpeg"  class="img-fluid" class="card-img-top" alt="Glow Beauty Spa Demo">
+                <div class="card-body">
+                  <h5 class="card-title">Glow Beauty Spa Demo Website</h5>
+                  <p class="card-text">
+                    Also a full project with a simple booking section for Glow Beauty Spa Demo Website account.
+                  </p>
+                  <a href="https://v-allary.github.io/TANCHINAILS/" target="_blank" class="btn btn-primary">Visit Site</a>
+                </div>
+              </div>
+            </div>
     </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer  text-center py-3">
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
     <div class="container">
-      <p class="mb-1">
-        © 2025 Mzizii Arts Production | All Rights Reserved | Designed &amp; Developed by
-        <a href="https://v-allary.github.io/vmdigital/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="developer-link">
-          VM Digitals
-        </a>
-      </p>
+      <h2 class="text-center" data-aos="fade-up">Contact Me</h2>
+      <form method="POST" action="https://vmdigital.co.ke/submit-form" data-aos="fade-up">
+        <div class="mb-3">
+          <input type="text" name="name" placeholder="Your Name" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" placeholder="Your Email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <textarea name="message" placeholder="Your Message" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
     </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Vallary Mitchelle. All rights reserved.</p>
   </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
-
+  </script>
 </body>
 </html>
