@@ -301,6 +301,7 @@ a:hover { text-decoration: underline; }
   text-decoration: underline;
 }
 
+
 /* ---------- Utilities ---------- */
 .container {
   max-width: 1160px;
@@ -315,4 +316,6 @@ a:hover { text-decoration: underline; }
 [data-aos].aos-animate {
   opacity: 1;
 }
- 
+ #team p{
+  color: #e74c3c;
+ }
