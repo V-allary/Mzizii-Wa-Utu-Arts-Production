@@ -314,8 +314,8 @@ Join us and be part of a community that believes in creativity, culture, and mea
       <i class="fas fa-phone"></i>
      </div>
      <h3>Phone</h3>
-    <p>+254 712345678 – Mzizii Arts Production</p>
-    <p>+254 712345678 – Mzizii Arts Production</p>
+    <p>+254 745377057– Mzizii Arts Production</p>
+    <p>+254 701998824– Mzizii Arts Production</p>
         </div>
 
       <!-- Location -->
@@ -341,39 +341,68 @@ Join us and be part of a community that believes in creativity, culture, and mea
   
     </div>
   </section>
-<!-- send message -->
-<section id="sendmessage" class=" py-5 bg-light text-dark">
-    <div class="container">
-        <h2 class="text-center mb-4 text-dark fw-bold" data-aos="fade-up">Send Message</h2>
-        <div class="underline"></div>
-        <form method="POST" action="https://mwuap.com/submit-form" data-aos="fade-up">
+ <!-- send message -->
+<section id="sendmessage" class="py-5 bg-light text-dark">
+  <div class="container">
+    <h2 class="text-center mb-4 text-dark fw-bold" data-aos="fade-up">
+      Send Message
+    </h2>
+    <div class="underline"></div>
 
-        <div class="row">
-            <div class="col-md-6 " data-aos="fade-right">
-                <form>
-                    <input type="text" class="form-control mb-3" placeholder="Your Name">
-                    <input type="email" class="form-control mb-3" placeholder="Your Email">
-                    <input type="subject" class="form-control mb-3" placeholder="Subject">
-                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
-                    <button class="btn-solid mx-2">Send Message</button>
-                </form>
-            </div>
+    <form method="POST" action="/submit-form" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <input
+            type="text"
+            name="name"
+            class="form-control mb-3"
+            placeholder="Your Name"
+            required
+          />
 
-            <div class="col-md-6" data-aos="fade-left">
-                <p>Kenya National Theatre, Nairobi, Kenya</p>
-                <iframe
-                src="https://www.google.com/maps?q=Kenya+National+Theatre+Nairobi&output=embed"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-                </iframe>
-            </div>
+          <input
+            type="email"
+            name="email"
+            class="form-control mb-3"
+            placeholder="Your Email"
+            required
+          />
+
+          <input
+            type="text"
+            name="subject"
+            class="form-control mb-3"
+            placeholder="Subject"
+            required
+          />
+
+          <textarea
+            name="message"
+            class="form-control mb-3"
+            rows="4"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn-solid mx-2">
+            Send Message
+          </button>
         </div>
-    </div>
-</section>
 
+        <div class="col-md-6" data-aos="fade-left">
+          <p>Kenya National Theatre, Nairobi, Kenya</p>
+          <iframe
+            src="https://www.google.com/maps?q=Kenya+National+Theatre+Nairobi&output=embed"
+            width="100%"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 <!-- FOOTER -->
 <footer class="footer  text-center py-3">
     <div class="container">
