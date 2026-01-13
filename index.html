@@ -351,7 +351,7 @@ Join us and be part of a community that believes in creativity, culture, and mea
       Send Message
     </h2>
     <div class="underline"></div>
-    <form method="POST" action="https://mzizii-arts-production.onrender.com/submit-form" data-aos="fade-up">
+    <form method="POST" id="contact-form" action="https://mzizii-arts-production.onrender.com/submit-form" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6" data-aos="fade-right">
           <input
@@ -503,6 +503,48 @@ Join us and be part of a community that believes in creativity, culture, and mea
 <script>
     AOS.init();
 </script>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page reload
+  
+    const form = e.target;
+    const button = document.getElementById("sendBtn");
+    const messageBox = document.getElementById("formMessage");
+  
+    button.disabled = true;
+    button.innerText = "Sending...";
+  
+    messageBox.style.display = "none";
+    messageBox.innerHTML = "";
+  
+    const formData = new FormData(form);
+  
+    fetch(form.action, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) throw new Error("Failed");
+      return response.text();
+    })
+    .then(() => {
+      messageBox.style.display = "block";
+      messageBox.className = "alert alert-success";
+      messageBox.innerText = "Message sent successfully -We shall respond to you soon!";
+      form.reset();
+    })
+    .catch(() => {
+      messageBox.style.display = "block";
+      messageBox.className = "alert alert-danger";
+      messageBox.innerText = "Failed to send message. Please try again.";
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.innerText = "Send Message";
+    });
+  });
+  </script>
 
 </body>
 </html>
