@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
@@ -10,6 +11,17 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
+app.use(cors({
+  origin: [
+    "https://mwuap.com",
+    "https://www.mwuap.com"
+  ],
+  methods: ["POST"],
+}));
+
+
+
+
 
 // Contact form endpoint
 app.post("/submit-form", async (req, res) => {
