@@ -351,65 +351,47 @@ Join us and be part of a community that believes in creativity, culture, and mea
       Send Message
     </h2>
     <div class="underline"></div>
+    <form method="POST" action="https://mzizii-arts-production.onrender.com/submit-form" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <input
+            type="text"
+            name="name"
+            class="form-control mb-3"
+            placeholder="Your Name"
+            required
+          />
 
-    <div class="underline"></div>
+          <input
+            type="email"
+            name="email"
+            class="form-control mb-3"
+            placeholder="Your Email"
+            required
+          />
 
-<form id="contactForm" data-aos="fade-up">
-  <div class="row">
+          <input
+            type="text"
+            name="subject"
+            class="form-control mb-3"
+            placeholder="Subject"
+            required
+          />
 
-    <div class="col-md-6" data-aos="fade-right">
-      <input
-        type="text"
-        name="name"
-        class="form-control mb-3"
-        placeholder="Your Name"
-        required
-      />
-    </div>
+          <textarea
+            name="message"
+            class="form-control mb-3"
+            rows="4"
+            placeholder="Message"
+            required
+          ></textarea>
 
-    <div class="col-md-6" data-aos="fade-left">
-      <input
-        type="email"
-        name="email"
-        class="form-control mb-3"
-        placeholder="Your Email"
-        required
-      />
-    </div>
+          <button type="submit" class="btn-solid mx-2">
+            Send Message
+          </button>
+        </div>
 
-    <div class="col-12">
-      <input
-        type="text"
-        name="subject"
-        class="form-control mb-3"
-        placeholder="Subject"
-        required
-      />
-    </div>
-
-    <div class="col-12">
-      <textarea
-        name="message"
-        class="form-control mb-3"
-        rows="5"
-        placeholder="Your Message"
-        required
-      ></textarea>
-    </div>
-
-    <div class="col-12 text-center">
-      <button type="submit"  id="sendBtn"  class="btn-solid mx-3">
-        Send Message
-      </button>
-    </div>
-
-  </div>
-</form>
-
-<!-- Message feedback -->
-<div id="formMessage" class="mt-4 text-center"></div>
-    
-    <div class="col-md-6" data-aos="fade-left">
+        <div class="col-md-6" data-aos="fade-left">
           <p>Kenya National Theatre, Nairobi, Kenya</p>
           <iframe
             src="https://www.google.com/maps?q=Kenya+National+Theatre+Nairobi&output=embed"
@@ -521,63 +503,6 @@ Join us and be part of a community that believes in creativity, culture, and mea
 <script>
     AOS.init();
 </script>
-
-<script>
-  document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
-  
-    const form = e.target;
-    const formMessage = document.getElementById("formMessage");
-    const sendBtn = document.getElementById("sendBtn");
-  
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      subject: form.subject.value,
-      message: form.message.value,
-    };
-  
-    // Disable button + feedback
-    sendBtn.disabled = true;
-    sendBtn.innerText = "Sending...";
-    formMessage.innerHTML = `
-      <div class="alert alert-info">
-        Sending message...
-      </div>
-    `;
-  
-    try {
-      const response = await fetch(
-        "https://mzizii-arts-production.onrender.com/submit-form",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        }
-      );
-  
-      if (!response.ok) throw new Error("Failed");
-  
-      formMessage.innerHTML = `
-        <div class="alert alert-success">
-           Message sent successfully! We’ll get back to you shortly.
-        </div>
-      `;
-  
-      form.reset();
-    } catch (error) {
-      formMessage.innerHTML = `
-        <div class="alert alert-danger">
-          Failed to send message. Please try again.
-        </div>
-      `;
-    } finally {
-      // Re-enable button
-      sendBtn.disabled = false;
-      sendBtn.innerText = "Send Message";
-    }
-  });
-  </script>
 
 </body>
 </html>
