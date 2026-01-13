@@ -21,17 +21,16 @@ app.post("/submit-form", async (req, res) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: Number(process.env.SMTP_PORT) === 465, 
+      service: "gmail",  
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        pass: process.env.EMAIL_PASS,  
       },
-    }); 
+    });
+
     await transporter.sendMail({
       from: `"MWUAP Website" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
+      to: "info@mwuap.com", //  
       replyTo: email,
       subject: `Website Message: ${subject}`,
       html: `
@@ -42,10 +41,10 @@ app.post("/submit-form", async (req, res) => {
       `,
     });
 
-    res.send("Message sent successfully!");
-  } catch (err) {
-    console.error("Email error:", err);
-    res.status(500).send("Failed to send message.");
+    res.status(200).send("Message sent successfully!");
+  } catch (error) {
+    console.error("Email send error:", error);
+    res.status(500).send("Email failed to send.");
   }
 });
 
