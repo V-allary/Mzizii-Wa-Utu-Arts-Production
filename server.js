@@ -57,7 +57,8 @@ if (req.body.website) {
       bcc: [
         "rockay@mwuap.com",
         "ak@mwuap.com",
-        "admin@mwuap.com"
+        "admin@mwuap.com",
+        "jo@mwuap.com",
       ],
       replyTo: email,
       subject: `Website Message: ${subject}`,
